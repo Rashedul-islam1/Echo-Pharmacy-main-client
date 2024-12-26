@@ -61,7 +61,30 @@ const AllUsers = () => {
       <div className="max-w-[900px] rounded mx-auto overflow-x-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-primary border border-[#1c445630]">
         <table className="w-full table-auto mb-10">
           {/* head */}
-          <thead className="text-left bg-primary "></thead>
+          <thead className="text-left bg-primary ">
+            <tr>
+              <th className="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+                #
+              </th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+                User Name
+              </th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+                user Email
+              </th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+                Role
+              </th>
+
+              <th className="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+                <div className="w-[100px]"> Make Admin</div>
+              </th>
+
+              <th className="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+                Action
+              </th>
+            </tr>
+          </thead>
           <tbody>
             {users?.data.map((user: any, i: any) => (
               <tr key={user._id} className="p-4 bg-slate-100 border-b">
