@@ -89,6 +89,10 @@ const ManageProducts = () => {
                     {order.status === "completed" ? order.status : "complete"}
                   </button>
                   <button
+                    disabled={
+                      order.status === "cancelled" ||
+                      order.status === "completed"
+                    }
                     onClick={() => handleChangeStatus(order._id, "cancelled")}
                     className={`inline-block px-3 py-1 text-center capitalize ${
                       order.status === "shipping"
