@@ -93,7 +93,7 @@ const Dashboard = () => {
           </div>
           <div className="text-right">
             <p className="text-2xl">{products?.data?.length}</p>
-            <p>Total Products</p>
+            <p>Total Product</p>
           </div>
         </div>
 
